@@ -1,22 +1,31 @@
 {
-    "name": "alarm-encounter-engine",
-    "title": "Alarm Encounter Engine",
-    "description": "A dynamic overland encounter system for Foundry VTT based on a 3d4 roll with Alarm Level modifiers.",
+	"id": "3d4-encounter-engine",
+	"title": "3d4 encounter engine",
+	"description": "An overly-complicated encounter system based on 3d4 tables",
     "version": "0.1.0",
-    "author": "George Vargas",
-    "esmodules": ["scripts/main.js"],
-    "styles": ["styles/style.css"],
-    "languages": [
-      {
-        "lang": "en",
-        "name": "English",
-        "path": "lang/en.json"
-      }
-    ],
-    "minimumCoreVersion": "11",
-    "compatibleCoreVersion": "11",
-    "url": "https://github.com/zstryder/alarm-encounter-engine",
-    "manifest": "https://raw.githubusercontent.com/zstryder/alarm-encounter-engine/main/module.json",
-    "download": "https://github.com/zstryder/alarm-encounter-engine/archive/refs/heads/main.zip"
-  }
+    "library": false,
+	"compatability": {
+		"minimum": "11",
+		"verified": "11"
+	},
+	"authors": [
+		{
+			"name": "George Vargas"
+		}
+	],
+	"relationships": {},
+	"esmodules": [
+		"scripts/encounterLookups.js",
+		"scripts/EncounterTableEditor.js",
+		"scripts/main.js"
+	],
+	"scripts": [],
+	"styles": [
+		"styles/style.css"
+	],
+    "url": "https://github.com/StryderSeven/3d4-encounter-engine",
+    "manifest": "https://github.com/StryderSeven/3d4-encounter-engine/releases/download/v0.1.0-alpha/module.json",
+    "download": "https://github.com/StryderSeven/3d4-encounter-engine/releases/download/v0.1.0-alpha/module.json",
+	"changelog": "https://github.com/StryderSeven/3d4-encounter-engine/releases/tag/v0.1.0-alpha"
+}
   
