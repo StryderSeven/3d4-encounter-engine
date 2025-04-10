@@ -1,0 +1,16 @@
+{
+    "3": ["Wonder", "N/A", "N/A", "N/A"],
+    "4": ["Uneventful", "Major Event", "N/A", "N/A"],
+    "5": ["Uneventful", "Point of Interest", "Major Event", "N/A"],
+    "6": ["Uneventful", "Minor Event", "Major Event", "Point of Interest"],
+    "7": ["Uneventful", "Uneventful", "Minor Event", "Point of Interest"],
+    "8": ["Point of Interest", "Uneventful", "Uneventful", "Uneventful"],
+    "9": ["Minor Event", "Hazard", "Hazard", "Uneventful"],
+    "10": ["Uneventful", "Major Event", "Hazard", "Combat -1"],
+    "11": ["Minor Event", "Hazard", "Hazard", "Combat"],
+    "12": ["Point of Interest", "Major Hazard", "Combat", "Combat +1"],
+    "13": ["Major Event", "Major Hazard", "Combat", "Combat +1"],
+    "14": ["N/A", "Major Hazard", "Combat +1", "Combat +2"],
+    "15": ["N/A", "N/A", "Combat +2", "Combat +3"],
+    "16": ["N/A", "N/A", "N/A", "Combat +3"]
+}

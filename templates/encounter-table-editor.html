@@ -1,0 +1,42 @@
+<form class="encounter-table-grid">
+    <table>
+      <thead>
+        <tr>
+          <th>3d4 Sum ↓ / d4 #1 →</th>
+          <th>Encounter 1</th>
+          <th>Encounter 2</th>
+          <th>Encounter 3</th>
+          <th>Encounter 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each table}}
+        <tr>
+          <td><strong>{{@key}}</strong></td>
+          {{#each this}}
+          <td>
+            <input type="text" name="{{@../key}}-{{@index}}" value="{{this}}" required />
+          </td>
+          {{/each}}
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  
+    <div class="form-group flexrow" style="margin-top: 1em; justify-content: space-between;">
+      <button type="submit" class="save">Save Table</button>
+      <button type="button" class="reset">Reset to Default</button>
+    </div>
+
+    <div class="form-group" style="margin-top: 1em;">
+        <label for="import-json">Import Encounter Table JSON</label>
+        <textarea id="import-json" rows="4" placeholder='Paste JSON here...'></textarea>
+        <button type="button" class="import">Import</button>
+      </div>
+      
+      <div class="form-group">
+        <button type="button" class="export">Export Current Table</button>
+      </div>
+      
+  </form>
+  

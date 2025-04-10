@@ -1,0 +1,73 @@
+<form class="alarm-encounter-form flexcol">
+
+    <h2 class="form-header">Travel Encounter Setup</h2>
+  
+    <div class="form-group">
+      <label for="region">Region</label>
+      <select id="region" name="region">
+        <option value="menador">Menador Mountains</option>
+        <option value="forest">Verdant Wilds</option>
+        <option value="plains">Rolling Plains</option>
+        <option value="custom">Custom Table</option>
+      </select>
+    </div>
+  
+    <div class="form-group">
+      <label for="terrain">Terrain Type</label>
+      <select id="terrain" name="terrain">
+        <option value="0">Normal (+0)</option>
+        <option value="1">Dangerous (+1)</option>
+        <option value="2">Hostile (+2)</option>
+      </select>
+    </div>
+  
+    <div class="form-group">
+      <label for="party-size">Party Size</label>
+      <select id="party-size" name="party-size">
+        <option value="0">1–4</option>
+        <option value="1">5–7 (+1)</option>
+        <option value="2">8+ / Caravan (+2)</option>
+      </select>
+    </div>
+  
+    <fieldset class="form-group">
+      <legend>Travel Actions</legend>
+      <label><input type="checkbox" name="slow-travel" value="-1"> Slow Travel (-1)</label><br>
+      <label><input type="checkbox" name="hide-tracks" value="-1"> Hide Tracks (-1)</label><br>
+      <label><input type="checkbox" name="scout" value="flavor"> Scout</label><br>
+      <label><input type="checkbox" name="defend" value="flavor"> Defend</label>
+    </fieldset>
+  
+    <div class="form-group">
+      <label for="manual-alarm">Manual Modifier (GM override)</label>
+      <input type="number" id="manual-alarm" name="manual-alarm" value="0" step="1" />
+    </div>
+  
+    <div class="form-group">
+      <label for="roll-method">Roll Method</label>
+      <select id="roll-method" name="roll-method">
+        <option value="auto">Auto-roll 3d4</option>
+        <option value="manual">Manual Entry</option>
+      </select>
+    </div>
+  
+    <div id="manual-dice-inputs" style="display: none;">
+      <label>d4 #1:
+        <input type="number" id="d4_1" name="d4_1" min="1" max="4" />
+      </label>
+      <label>d4 #2:
+        <input type="number" id="d4_2" name="d4_2" min="1" max="4" />
+      </label>
+      <label>d4 #3:
+        <input type="number" id="d4_3" name="d4_3" min="1" max="4" />
+      </label>
+    </div>
+  
+    <div class="form-group">
+      <button type="submit">
+        Roll Encounter
+      </button>
+    </div>
+  
+  </form>
+  
